@@ -1,0 +1,3165 @@
+{
+    "nombreTorneo": "Torneo Prueba Navegable",
+    "grupos": [
+        {
+            "nombreGrupo": "Grupo A",
+            "jugadores": [
+                {
+                    "nombre": "1\u00ba_Grupo A",
+                    "id": "80cd2c57-cb80-4f4c-bd16-67a041404cf2",
+                    "partidosJugados": 3,
+                    "partidosGanados": 3,
+                    "partidosPerdidos": 0,
+                    "setsGanados": 6,
+                    "setsPerdidos": 0,
+                    "puntos": 9
+                },
+                {
+                    "nombre": "2\u00ba_Grupo A",
+                    "id": "628f58f7-fa3e-46b8-9d85-ca13dd34ce28",
+                    "partidosJugados": 3,
+                    "partidosGanados": 2,
+                    "partidosPerdidos": 1,
+                    "setsGanados": 5,
+                    "setsPerdidos": 2,
+                    "puntos": 7
+                },
+                {
+                    "nombre": "3\u00ba_Grupo A",
+                    "id": "b1f61f6c-8d08-489b-9672-b155018711c1",
+                    "partidosJugados": 3,
+                    "partidosGanados": 1,
+                    "partidosPerdidos": 2,
+                    "setsGanados": 4,
+                    "setsPerdidos": 4,
+                    "puntos": 5
+                },
+                {
+                    "nombre": "4\u00ba_Grupo A",
+                    "id": "29d5ea1e-c936-429f-a8ca-671a45296d06",
+                    "partidosJugados": 3,
+                    "partidosGanados": 0,
+                    "partidosPerdidos": 3,
+                    "setsGanados": 3,
+                    "setsPerdidos": 6,
+                    "puntos": 3
+                }
+            ],
+            "partidos": [
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo A",
+                        "id": "80cd2c57-cb80-4f4c-bd16-67a041404cf2",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "2\u00ba_Grupo A",
+                        "id": "628f58f7-fa3e-46b8-9d85-ca13dd34ce28",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo A",
+                        "id": "80cd2c57-cb80-4f4c-bd16-67a041404cf2",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo A",
+                        "id": "b1f61f6c-8d08-489b-9672-b155018711c1",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo A",
+                        "id": "80cd2c57-cb80-4f4c-bd16-67a041404cf2",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo A",
+                        "id": "29d5ea1e-c936-429f-a8ca-671a45296d06",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo A",
+                        "id": "628f58f7-fa3e-46b8-9d85-ca13dd34ce28",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo A",
+                        "id": "b1f61f6c-8d08-489b-9672-b155018711c1",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo A",
+                        "id": "628f58f7-fa3e-46b8-9d85-ca13dd34ce28",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo A",
+                        "id": "29d5ea1e-c936-429f-a8ca-671a45296d06",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo A",
+                        "id": "b1f61f6c-8d08-489b-9672-b155018711c1",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo A",
+                        "id": "29d5ea1e-c936-429f-a8ca-671a45296d06",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                }
+            ]
+        },
+        {
+            "nombreGrupo": "Grupo B",
+            "jugadores": [
+                {
+                    "nombre": "1\u00ba_Grupo B",
+                    "id": "acd12b75-4be5-40cf-b3db-9f58f5b7b5fb",
+                    "partidosJugados": 4,
+                    "partidosGanados": 4,
+                    "partidosPerdidos": 0,
+                    "setsGanados": 6,
+                    "setsPerdidos": 0,
+                    "puntos": 12
+                },
+                {
+                    "nombre": "2\u00ba_Grupo B",
+                    "id": "2625da60-c888-4fec-afc7-75d79ae553cf",
+                    "partidosJugados": 4,
+                    "partidosGanados": 3,
+                    "partidosPerdidos": 1,
+                    "setsGanados": 5,
+                    "setsPerdidos": 2,
+                    "puntos": 10
+                },
+                {
+                    "nombre": "3\u00ba_Grupo B",
+                    "id": "08623b5f-fae2-4709-a3f7-2b11066700bb",
+                    "partidosJugados": 4,
+                    "partidosGanados": 2,
+                    "partidosPerdidos": 2,
+                    "setsGanados": 4,
+                    "setsPerdidos": 4,
+                    "puntos": 8
+                },
+                {
+                    "nombre": "4\u00ba_Grupo B",
+                    "id": "9ef76fc8-c9c8-4a2b-9aa8-87bd1bfb42b5",
+                    "partidosJugados": 4,
+                    "partidosGanados": 1,
+                    "partidosPerdidos": 3,
+                    "setsGanados": 3,
+                    "setsPerdidos": 6,
+                    "puntos": 6
+                },
+                {
+                    "nombre": "5\u00ba_Grupo B",
+                    "id": "9e6ab47e-a33b-49d1-adfe-727e180f5f25",
+                    "partidosJugados": 4,
+                    "partidosGanados": 0,
+                    "partidosPerdidos": 4,
+                    "setsGanados": 2,
+                    "setsPerdidos": 8,
+                    "puntos": 4
+                }
+            ],
+            "partidos": [
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo B",
+                        "id": "acd12b75-4be5-40cf-b3db-9f58f5b7b5fb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "2\u00ba_Grupo B",
+                        "id": "2625da60-c888-4fec-afc7-75d79ae553cf",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo B",
+                        "id": "acd12b75-4be5-40cf-b3db-9f58f5b7b5fb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo B",
+                        "id": "08623b5f-fae2-4709-a3f7-2b11066700bb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo B",
+                        "id": "acd12b75-4be5-40cf-b3db-9f58f5b7b5fb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo B",
+                        "id": "9ef76fc8-c9c8-4a2b-9aa8-87bd1bfb42b5",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo B",
+                        "id": "acd12b75-4be5-40cf-b3db-9f58f5b7b5fb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo B",
+                        "id": "9e6ab47e-a33b-49d1-adfe-727e180f5f25",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo B",
+                        "id": "2625da60-c888-4fec-afc7-75d79ae553cf",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo B",
+                        "id": "08623b5f-fae2-4709-a3f7-2b11066700bb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo B",
+                        "id": "2625da60-c888-4fec-afc7-75d79ae553cf",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo B",
+                        "id": "9ef76fc8-c9c8-4a2b-9aa8-87bd1bfb42b5",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo B",
+                        "id": "2625da60-c888-4fec-afc7-75d79ae553cf",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo B",
+                        "id": "9e6ab47e-a33b-49d1-adfe-727e180f5f25",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo B",
+                        "id": "08623b5f-fae2-4709-a3f7-2b11066700bb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo B",
+                        "id": "9ef76fc8-c9c8-4a2b-9aa8-87bd1bfb42b5",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo B",
+                        "id": "08623b5f-fae2-4709-a3f7-2b11066700bb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo B",
+                        "id": "9e6ab47e-a33b-49d1-adfe-727e180f5f25",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "4\u00ba_Grupo B",
+                        "id": "9ef76fc8-c9c8-4a2b-9aa8-87bd1bfb42b5",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo B",
+                        "id": "9e6ab47e-a33b-49d1-adfe-727e180f5f25",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                }
+            ]
+        },
+        {
+            "nombreGrupo": "Grupo C",
+            "jugadores": [
+                {
+                    "nombre": "1\u00ba_Grupo C",
+                    "id": "be2e0dc1-d21e-4c31-b972-b9d8642f59f9",
+                    "partidosJugados": 3,
+                    "partidosGanados": 3,
+                    "partidosPerdidos": 0,
+                    "setsGanados": 6,
+                    "setsPerdidos": 0,
+                    "puntos": 9
+                },
+                {
+                    "nombre": "2\u00ba_Grupo C",
+                    "id": "3402ccbf-c454-47e9-8101-f3052aac7ef2",
+                    "partidosJugados": 3,
+                    "partidosGanados": 2,
+                    "partidosPerdidos": 1,
+                    "setsGanados": 5,
+                    "setsPerdidos": 2,
+                    "puntos": 7
+                },
+                {
+                    "nombre": "3\u00ba_Grupo C",
+                    "id": "c0b28e90-545d-48a0-9b2e-5672fd6f71d5",
+                    "partidosJugados": 3,
+                    "partidosGanados": 1,
+                    "partidosPerdidos": 2,
+                    "setsGanados": 4,
+                    "setsPerdidos": 4,
+                    "puntos": 5
+                },
+                {
+                    "nombre": "4\u00ba_Grupo C",
+                    "id": "778ea4fa-2826-439c-b121-337c4fa7a3d0",
+                    "partidosJugados": 3,
+                    "partidosGanados": 0,
+                    "partidosPerdidos": 3,
+                    "setsGanados": 3,
+                    "setsPerdidos": 6,
+                    "puntos": 3
+                }
+            ],
+            "partidos": [
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo C",
+                        "id": "be2e0dc1-d21e-4c31-b972-b9d8642f59f9",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "2\u00ba_Grupo C",
+                        "id": "3402ccbf-c454-47e9-8101-f3052aac7ef2",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo C",
+                        "id": "be2e0dc1-d21e-4c31-b972-b9d8642f59f9",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo C",
+                        "id": "c0b28e90-545d-48a0-9b2e-5672fd6f71d5",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo C",
+                        "id": "be2e0dc1-d21e-4c31-b972-b9d8642f59f9",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo C",
+                        "id": "778ea4fa-2826-439c-b121-337c4fa7a3d0",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo C",
+                        "id": "3402ccbf-c454-47e9-8101-f3052aac7ef2",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo C",
+                        "id": "c0b28e90-545d-48a0-9b2e-5672fd6f71d5",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo C",
+                        "id": "3402ccbf-c454-47e9-8101-f3052aac7ef2",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo C",
+                        "id": "778ea4fa-2826-439c-b121-337c4fa7a3d0",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo C",
+                        "id": "c0b28e90-545d-48a0-9b2e-5672fd6f71d5",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo C",
+                        "id": "778ea4fa-2826-439c-b121-337c4fa7a3d0",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                }
+            ]
+        },
+        {
+            "nombreGrupo": "Grupo D",
+            "jugadores": [
+                {
+                    "nombre": "1\u00ba_Grupo D",
+                    "id": "5b7ddfad-da7e-447c-8bb6-cc99dfe0e014",
+                    "partidosJugados": 4,
+                    "partidosGanados": 4,
+                    "partidosPerdidos": 0,
+                    "setsGanados": 6,
+                    "setsPerdidos": 0,
+                    "puntos": 12
+                },
+                {
+                    "nombre": "2\u00ba_Grupo D",
+                    "id": "2d0193f9-e89e-454f-a5b0-874ba3454ea3",
+                    "partidosJugados": 4,
+                    "partidosGanados": 3,
+                    "partidosPerdidos": 1,
+                    "setsGanados": 5,
+                    "setsPerdidos": 2,
+                    "puntos": 10
+                },
+                {
+                    "nombre": "3\u00ba_Grupo D",
+                    "id": "e3751187-0f8d-48ac-82ac-b38fd1b02fd9",
+                    "partidosJugados": 4,
+                    "partidosGanados": 2,
+                    "partidosPerdidos": 2,
+                    "setsGanados": 4,
+                    "setsPerdidos": 4,
+                    "puntos": 8
+                },
+                {
+                    "nombre": "4\u00ba_Grupo D",
+                    "id": "dae61c38-42fe-45b5-b0ee-b68b93a1e1a7",
+                    "partidosJugados": 4,
+                    "partidosGanados": 1,
+                    "partidosPerdidos": 3,
+                    "setsGanados": 3,
+                    "setsPerdidos": 6,
+                    "puntos": 6
+                },
+                {
+                    "nombre": "5\u00ba_Grupo D",
+                    "id": "add44df5-6469-4198-a318-7ea993bc5f25",
+                    "partidosJugados": 4,
+                    "partidosGanados": 0,
+                    "partidosPerdidos": 4,
+                    "setsGanados": 2,
+                    "setsPerdidos": 8,
+                    "puntos": 4
+                }
+            ],
+            "partidos": [
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo D",
+                        "id": "5b7ddfad-da7e-447c-8bb6-cc99dfe0e014",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "2\u00ba_Grupo D",
+                        "id": "2d0193f9-e89e-454f-a5b0-874ba3454ea3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo D",
+                        "id": "5b7ddfad-da7e-447c-8bb6-cc99dfe0e014",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo D",
+                        "id": "e3751187-0f8d-48ac-82ac-b38fd1b02fd9",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo D",
+                        "id": "5b7ddfad-da7e-447c-8bb6-cc99dfe0e014",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo D",
+                        "id": "dae61c38-42fe-45b5-b0ee-b68b93a1e1a7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo D",
+                        "id": "5b7ddfad-da7e-447c-8bb6-cc99dfe0e014",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo D",
+                        "id": "add44df5-6469-4198-a318-7ea993bc5f25",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo D",
+                        "id": "2d0193f9-e89e-454f-a5b0-874ba3454ea3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo D",
+                        "id": "e3751187-0f8d-48ac-82ac-b38fd1b02fd9",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo D",
+                        "id": "2d0193f9-e89e-454f-a5b0-874ba3454ea3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo D",
+                        "id": "dae61c38-42fe-45b5-b0ee-b68b93a1e1a7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo D",
+                        "id": "2d0193f9-e89e-454f-a5b0-874ba3454ea3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo D",
+                        "id": "add44df5-6469-4198-a318-7ea993bc5f25",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo D",
+                        "id": "e3751187-0f8d-48ac-82ac-b38fd1b02fd9",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo D",
+                        "id": "dae61c38-42fe-45b5-b0ee-b68b93a1e1a7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo D",
+                        "id": "e3751187-0f8d-48ac-82ac-b38fd1b02fd9",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo D",
+                        "id": "add44df5-6469-4198-a318-7ea993bc5f25",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "4\u00ba_Grupo D",
+                        "id": "dae61c38-42fe-45b5-b0ee-b68b93a1e1a7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo D",
+                        "id": "add44df5-6469-4198-a318-7ea993bc5f25",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                }
+            ]
+        },
+        {
+            "nombreGrupo": "Grupo E",
+            "jugadores": [
+                {
+                    "nombre": "1\u00ba_Grupo E",
+                    "id": "a4c122ce-4186-4696-b60d-9dbe3dd02452",
+                    "partidosJugados": 3,
+                    "partidosGanados": 3,
+                    "partidosPerdidos": 0,
+                    "setsGanados": 6,
+                    "setsPerdidos": 0,
+                    "puntos": 9
+                },
+                {
+                    "nombre": "2\u00ba_Grupo E",
+                    "id": "f1d22db2-c9e6-47a6-a5af-558bc9c5096b",
+                    "partidosJugados": 3,
+                    "partidosGanados": 2,
+                    "partidosPerdidos": 1,
+                    "setsGanados": 5,
+                    "setsPerdidos": 2,
+                    "puntos": 7
+                },
+                {
+                    "nombre": "3\u00ba_Grupo E",
+                    "id": "24a73911-a090-42d1-beea-bc820e443f8a",
+                    "partidosJugados": 3,
+                    "partidosGanados": 1,
+                    "partidosPerdidos": 2,
+                    "setsGanados": 4,
+                    "setsPerdidos": 4,
+                    "puntos": 5
+                },
+                {
+                    "nombre": "4\u00ba_Grupo E",
+                    "id": "173231b3-d380-4a51-a064-881866eb06af",
+                    "partidosJugados": 3,
+                    "partidosGanados": 0,
+                    "partidosPerdidos": 3,
+                    "setsGanados": 3,
+                    "setsPerdidos": 6,
+                    "puntos": 3
+                }
+            ],
+            "partidos": [
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo E",
+                        "id": "a4c122ce-4186-4696-b60d-9dbe3dd02452",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "2\u00ba_Grupo E",
+                        "id": "f1d22db2-c9e6-47a6-a5af-558bc9c5096b",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo E",
+                        "id": "a4c122ce-4186-4696-b60d-9dbe3dd02452",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo E",
+                        "id": "24a73911-a090-42d1-beea-bc820e443f8a",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo E",
+                        "id": "a4c122ce-4186-4696-b60d-9dbe3dd02452",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo E",
+                        "id": "173231b3-d380-4a51-a064-881866eb06af",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo E",
+                        "id": "f1d22db2-c9e6-47a6-a5af-558bc9c5096b",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo E",
+                        "id": "24a73911-a090-42d1-beea-bc820e443f8a",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo E",
+                        "id": "f1d22db2-c9e6-47a6-a5af-558bc9c5096b",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo E",
+                        "id": "173231b3-d380-4a51-a064-881866eb06af",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo E",
+                        "id": "24a73911-a090-42d1-beea-bc820e443f8a",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo E",
+                        "id": "173231b3-d380-4a51-a064-881866eb06af",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                }
+            ]
+        },
+        {
+            "nombreGrupo": "Grupo F",
+            "jugadores": [
+                {
+                    "nombre": "1\u00ba_Grupo F",
+                    "id": "67716a3f-abf8-47a4-961b-9e21697187b3",
+                    "partidosJugados": 4,
+                    "partidosGanados": 4,
+                    "partidosPerdidos": 0,
+                    "setsGanados": 6,
+                    "setsPerdidos": 0,
+                    "puntos": 12
+                },
+                {
+                    "nombre": "2\u00ba_Grupo F",
+                    "id": "58f9307d-61d2-4b60-8972-40648e1e6d61",
+                    "partidosJugados": 4,
+                    "partidosGanados": 3,
+                    "partidosPerdidos": 1,
+                    "setsGanados": 5,
+                    "setsPerdidos": 2,
+                    "puntos": 10
+                },
+                {
+                    "nombre": "3\u00ba_Grupo F",
+                    "id": "b378ebcc-8339-4b45-afd8-4baaebcc8102",
+                    "partidosJugados": 4,
+                    "partidosGanados": 2,
+                    "partidosPerdidos": 2,
+                    "setsGanados": 4,
+                    "setsPerdidos": 4,
+                    "puntos": 8
+                },
+                {
+                    "nombre": "4\u00ba_Grupo F",
+                    "id": "f6ab4cab-924d-4037-8915-b8fd7ecabf84",
+                    "partidosJugados": 4,
+                    "partidosGanados": 1,
+                    "partidosPerdidos": 3,
+                    "setsGanados": 3,
+                    "setsPerdidos": 6,
+                    "puntos": 6
+                },
+                {
+                    "nombre": "5\u00ba_Grupo F",
+                    "id": "b6cb5736-237f-4d41-8a0f-f83a58d3c0e3",
+                    "partidosJugados": 4,
+                    "partidosGanados": 0,
+                    "partidosPerdidos": 4,
+                    "setsGanados": 2,
+                    "setsPerdidos": 8,
+                    "puntos": 4
+                }
+            ],
+            "partidos": [
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo F",
+                        "id": "67716a3f-abf8-47a4-961b-9e21697187b3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "2\u00ba_Grupo F",
+                        "id": "58f9307d-61d2-4b60-8972-40648e1e6d61",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo F",
+                        "id": "67716a3f-abf8-47a4-961b-9e21697187b3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo F",
+                        "id": "b378ebcc-8339-4b45-afd8-4baaebcc8102",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo F",
+                        "id": "67716a3f-abf8-47a4-961b-9e21697187b3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo F",
+                        "id": "f6ab4cab-924d-4037-8915-b8fd7ecabf84",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo F",
+                        "id": "67716a3f-abf8-47a4-961b-9e21697187b3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo F",
+                        "id": "b6cb5736-237f-4d41-8a0f-f83a58d3c0e3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo F",
+                        "id": "58f9307d-61d2-4b60-8972-40648e1e6d61",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo F",
+                        "id": "b378ebcc-8339-4b45-afd8-4baaebcc8102",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo F",
+                        "id": "58f9307d-61d2-4b60-8972-40648e1e6d61",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo F",
+                        "id": "f6ab4cab-924d-4037-8915-b8fd7ecabf84",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo F",
+                        "id": "58f9307d-61d2-4b60-8972-40648e1e6d61",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo F",
+                        "id": "b6cb5736-237f-4d41-8a0f-f83a58d3c0e3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo F",
+                        "id": "b378ebcc-8339-4b45-afd8-4baaebcc8102",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo F",
+                        "id": "f6ab4cab-924d-4037-8915-b8fd7ecabf84",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo F",
+                        "id": "b378ebcc-8339-4b45-afd8-4baaebcc8102",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo F",
+                        "id": "b6cb5736-237f-4d41-8a0f-f83a58d3c0e3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "4\u00ba_Grupo F",
+                        "id": "f6ab4cab-924d-4037-8915-b8fd7ecabf84",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo F",
+                        "id": "b6cb5736-237f-4d41-8a0f-f83a58d3c0e3",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                }
+            ]
+        },
+        {
+            "nombreGrupo": "Grupo G",
+            "jugadores": [
+                {
+                    "nombre": "1\u00ba_Grupo G",
+                    "id": "d2ce8dd4-33ec-4e09-a6ca-58f497a89879",
+                    "partidosJugados": 3,
+                    "partidosGanados": 3,
+                    "partidosPerdidos": 0,
+                    "setsGanados": 6,
+                    "setsPerdidos": 0,
+                    "puntos": 9
+                },
+                {
+                    "nombre": "2\u00ba_Grupo G",
+                    "id": "7ead7536-7061-4293-89e9-c3b1550f9131",
+                    "partidosJugados": 3,
+                    "partidosGanados": 2,
+                    "partidosPerdidos": 1,
+                    "setsGanados": 5,
+                    "setsPerdidos": 2,
+                    "puntos": 7
+                },
+                {
+                    "nombre": "3\u00ba_Grupo G",
+                    "id": "ac988208-ccc6-48c4-b044-ad200d3d63a0",
+                    "partidosJugados": 3,
+                    "partidosGanados": 1,
+                    "partidosPerdidos": 2,
+                    "setsGanados": 4,
+                    "setsPerdidos": 4,
+                    "puntos": 5
+                },
+                {
+                    "nombre": "4\u00ba_Grupo G",
+                    "id": "a1474aff-a3c1-4686-ba63-57411fb6823a",
+                    "partidosJugados": 3,
+                    "partidosGanados": 0,
+                    "partidosPerdidos": 3,
+                    "setsGanados": 3,
+                    "setsPerdidos": 6,
+                    "puntos": 3
+                }
+            ],
+            "partidos": [
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo G",
+                        "id": "d2ce8dd4-33ec-4e09-a6ca-58f497a89879",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "2\u00ba_Grupo G",
+                        "id": "7ead7536-7061-4293-89e9-c3b1550f9131",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo G",
+                        "id": "d2ce8dd4-33ec-4e09-a6ca-58f497a89879",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo G",
+                        "id": "ac988208-ccc6-48c4-b044-ad200d3d63a0",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo G",
+                        "id": "d2ce8dd4-33ec-4e09-a6ca-58f497a89879",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo G",
+                        "id": "a1474aff-a3c1-4686-ba63-57411fb6823a",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo G",
+                        "id": "7ead7536-7061-4293-89e9-c3b1550f9131",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo G",
+                        "id": "ac988208-ccc6-48c4-b044-ad200d3d63a0",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo G",
+                        "id": "7ead7536-7061-4293-89e9-c3b1550f9131",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo G",
+                        "id": "a1474aff-a3c1-4686-ba63-57411fb6823a",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo G",
+                        "id": "ac988208-ccc6-48c4-b044-ad200d3d63a0",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo G",
+                        "id": "a1474aff-a3c1-4686-ba63-57411fb6823a",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                }
+            ]
+        },
+        {
+            "nombreGrupo": "Grupo H",
+            "jugadores": [
+                {
+                    "nombre": "1\u00ba_Grupo H",
+                    "id": "0ed35dd0-cc9f-4bd9-8b2f-dce2b2e7594f",
+                    "partidosJugados": 4,
+                    "partidosGanados": 4,
+                    "partidosPerdidos": 0,
+                    "setsGanados": 6,
+                    "setsPerdidos": 0,
+                    "puntos": 12
+                },
+                {
+                    "nombre": "2\u00ba_Grupo H",
+                    "id": "8fc1cc46-8f20-4aef-b2e5-db28a464c0e7",
+                    "partidosJugados": 4,
+                    "partidosGanados": 3,
+                    "partidosPerdidos": 1,
+                    "setsGanados": 5,
+                    "setsPerdidos": 2,
+                    "puntos": 10
+                },
+                {
+                    "nombre": "3\u00ba_Grupo H",
+                    "id": "f1a0c433-068c-4380-93e4-026fa46985ea",
+                    "partidosJugados": 4,
+                    "partidosGanados": 2,
+                    "partidosPerdidos": 2,
+                    "setsGanados": 4,
+                    "setsPerdidos": 4,
+                    "puntos": 8
+                },
+                {
+                    "nombre": "4\u00ba_Grupo H",
+                    "id": "6e6c5639-546b-42d4-8921-982403bdce85",
+                    "partidosJugados": 4,
+                    "partidosGanados": 1,
+                    "partidosPerdidos": 3,
+                    "setsGanados": 3,
+                    "setsPerdidos": 6,
+                    "puntos": 6
+                },
+                {
+                    "nombre": "5\u00ba_Grupo H",
+                    "id": "55c6e873-6f6b-434e-ac79-e0a43e7c6004",
+                    "partidosJugados": 4,
+                    "partidosGanados": 0,
+                    "partidosPerdidos": 4,
+                    "setsGanados": 2,
+                    "setsPerdidos": 8,
+                    "puntos": 4
+                }
+            ],
+            "partidos": [
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo H",
+                        "id": "0ed35dd0-cc9f-4bd9-8b2f-dce2b2e7594f",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "2\u00ba_Grupo H",
+                        "id": "8fc1cc46-8f20-4aef-b2e5-db28a464c0e7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo H",
+                        "id": "0ed35dd0-cc9f-4bd9-8b2f-dce2b2e7594f",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo H",
+                        "id": "f1a0c433-068c-4380-93e4-026fa46985ea",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo H",
+                        "id": "0ed35dd0-cc9f-4bd9-8b2f-dce2b2e7594f",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo H",
+                        "id": "6e6c5639-546b-42d4-8921-982403bdce85",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo H",
+                        "id": "0ed35dd0-cc9f-4bd9-8b2f-dce2b2e7594f",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo H",
+                        "id": "55c6e873-6f6b-434e-ac79-e0a43e7c6004",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo H",
+                        "id": "8fc1cc46-8f20-4aef-b2e5-db28a464c0e7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo H",
+                        "id": "f1a0c433-068c-4380-93e4-026fa46985ea",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo H",
+                        "id": "8fc1cc46-8f20-4aef-b2e5-db28a464c0e7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo H",
+                        "id": "6e6c5639-546b-42d4-8921-982403bdce85",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo H",
+                        "id": "8fc1cc46-8f20-4aef-b2e5-db28a464c0e7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo H",
+                        "id": "55c6e873-6f6b-434e-ac79-e0a43e7c6004",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo H",
+                        "id": "f1a0c433-068c-4380-93e4-026fa46985ea",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo H",
+                        "id": "6e6c5639-546b-42d4-8921-982403bdce85",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo H",
+                        "id": "f1a0c433-068c-4380-93e4-026fa46985ea",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo H",
+                        "id": "55c6e873-6f6b-434e-ac79-e0a43e7c6004",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "4\u00ba_Grupo H",
+                        "id": "6e6c5639-546b-42d4-8921-982403bdce85",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo H",
+                        "id": "55c6e873-6f6b-434e-ac79-e0a43e7c6004",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                }
+            ]
+        },
+        {
+            "nombreGrupo": "Grupo I",
+            "jugadores": [
+                {
+                    "nombre": "1\u00ba_Grupo I",
+                    "id": "0c5ff5ce-4b3e-42e5-b4a5-fa6de500ea28",
+                    "partidosJugados": 3,
+                    "partidosGanados": 3,
+                    "partidosPerdidos": 0,
+                    "setsGanados": 6,
+                    "setsPerdidos": 0,
+                    "puntos": 9
+                },
+                {
+                    "nombre": "2\u00ba_Grupo I",
+                    "id": "6e5b3c2a-924c-4576-828a-8f2553b3d8e3",
+                    "partidosJugados": 3,
+                    "partidosGanados": 2,
+                    "partidosPerdidos": 1,
+                    "setsGanados": 5,
+                    "setsPerdidos": 2,
+                    "puntos": 7
+                },
+                {
+                    "nombre": "3\u00ba_Grupo I",
+                    "id": "b42f5f70-1ad5-4c00-8cb7-288325656ca1",
+                    "partidosJugados": 3,
+                    "partidosGanados": 1,
+                    "partidosPerdidos": 2,
+                    "setsGanados": 4,
+                    "setsPerdidos": 4,
+                    "puntos": 5
+                },
+                {
+                    "nombre": "4\u00ba_Grupo I",
+                    "id": "014ac3ac-af39-4526-934e-197382b6619b",
+                    "partidosJugados": 3,
+                    "partidosGanados": 0,
+                    "partidosPerdidos": 3,
+                    "setsGanados": 3,
+                    "setsPerdidos": 6,
+                    "puntos": 3
+                }
+            ],
+            "partidos": [
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo I",
+                        "id": "0c5ff5ce-4b3e-42e5-b4a5-fa6de500ea28",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "2\u00ba_Grupo I",
+                        "id": "6e5b3c2a-924c-4576-828a-8f2553b3d8e3",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo I",
+                        "id": "0c5ff5ce-4b3e-42e5-b4a5-fa6de500ea28",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo I",
+                        "id": "b42f5f70-1ad5-4c00-8cb7-288325656ca1",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo I",
+                        "id": "0c5ff5ce-4b3e-42e5-b4a5-fa6de500ea28",
+                        "partidosJugados": 3,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 9
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo I",
+                        "id": "014ac3ac-af39-4526-934e-197382b6619b",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo I",
+                        "id": "6e5b3c2a-924c-4576-828a-8f2553b3d8e3",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo I",
+                        "id": "b42f5f70-1ad5-4c00-8cb7-288325656ca1",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo I",
+                        "id": "6e5b3c2a-924c-4576-828a-8f2553b3d8e3",
+                        "partidosJugados": 3,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 7
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo I",
+                        "id": "014ac3ac-af39-4526-934e-197382b6619b",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo I",
+                        "id": "b42f5f70-1ad5-4c00-8cb7-288325656ca1",
+                        "partidosJugados": 3,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 5
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo I",
+                        "id": "014ac3ac-af39-4526-934e-197382b6619b",
+                        "partidosJugados": 3,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 3
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                }
+            ]
+        },
+        {
+            "nombreGrupo": "Grupo J",
+            "jugadores": [
+                {
+                    "nombre": "1\u00ba_Grupo J",
+                    "id": "9f3dcbf7-6948-4c04-8c5a-7598cbd064bb",
+                    "partidosJugados": 4,
+                    "partidosGanados": 4,
+                    "partidosPerdidos": 0,
+                    "setsGanados": 6,
+                    "setsPerdidos": 0,
+                    "puntos": 12
+                },
+                {
+                    "nombre": "2\u00ba_Grupo J",
+                    "id": "94dc1cad-c359-4628-a7fa-2edd8ece196e",
+                    "partidosJugados": 4,
+                    "partidosGanados": 3,
+                    "partidosPerdidos": 1,
+                    "setsGanados": 5,
+                    "setsPerdidos": 2,
+                    "puntos": 10
+                },
+                {
+                    "nombre": "3\u00ba_Grupo J",
+                    "id": "91bfc42f-b140-4f5d-ba23-2c0af6d7423f",
+                    "partidosJugados": 4,
+                    "partidosGanados": 2,
+                    "partidosPerdidos": 2,
+                    "setsGanados": 4,
+                    "setsPerdidos": 4,
+                    "puntos": 8
+                },
+                {
+                    "nombre": "4\u00ba_Grupo J",
+                    "id": "af6555d6-08ee-4019-bb54-954e4de676cf",
+                    "partidosJugados": 4,
+                    "partidosGanados": 1,
+                    "partidosPerdidos": 3,
+                    "setsGanados": 3,
+                    "setsPerdidos": 6,
+                    "puntos": 6
+                },
+                {
+                    "nombre": "5\u00ba_Grupo J",
+                    "id": "e8f2b36a-f13c-48a4-bbd0-fff64f2720f7",
+                    "partidosJugados": 4,
+                    "partidosGanados": 0,
+                    "partidosPerdidos": 4,
+                    "setsGanados": 2,
+                    "setsPerdidos": 8,
+                    "puntos": 4
+                }
+            ],
+            "partidos": [
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo J",
+                        "id": "9f3dcbf7-6948-4c04-8c5a-7598cbd064bb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "2\u00ba_Grupo J",
+                        "id": "94dc1cad-c359-4628-a7fa-2edd8ece196e",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo J",
+                        "id": "9f3dcbf7-6948-4c04-8c5a-7598cbd064bb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo J",
+                        "id": "91bfc42f-b140-4f5d-ba23-2c0af6d7423f",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo J",
+                        "id": "9f3dcbf7-6948-4c04-8c5a-7598cbd064bb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo J",
+                        "id": "af6555d6-08ee-4019-bb54-954e4de676cf",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "1\u00ba_Grupo J",
+                        "id": "9f3dcbf7-6948-4c04-8c5a-7598cbd064bb",
+                        "partidosJugados": 4,
+                        "partidosGanados": 4,
+                        "partidosPerdidos": 0,
+                        "setsGanados": 6,
+                        "setsPerdidos": 0,
+                        "puntos": 12
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo J",
+                        "id": "e8f2b36a-f13c-48a4-bbd0-fff64f2720f7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo J",
+                        "id": "94dc1cad-c359-4628-a7fa-2edd8ece196e",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "3\u00ba_Grupo J",
+                        "id": "91bfc42f-b140-4f5d-ba23-2c0af6d7423f",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo J",
+                        "id": "94dc1cad-c359-4628-a7fa-2edd8ece196e",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo J",
+                        "id": "af6555d6-08ee-4019-bb54-954e4de676cf",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "2\u00ba_Grupo J",
+                        "id": "94dc1cad-c359-4628-a7fa-2edd8ece196e",
+                        "partidosJugados": 4,
+                        "partidosGanados": 3,
+                        "partidosPerdidos": 1,
+                        "setsGanados": 5,
+                        "setsPerdidos": 2,
+                        "puntos": 10
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo J",
+                        "id": "e8f2b36a-f13c-48a4-bbd0-fff64f2720f7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo J",
+                        "id": "91bfc42f-b140-4f5d-ba23-2c0af6d7423f",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "jugador2": {
+                        "nombre": "4\u00ba_Grupo J",
+                        "id": "af6555d6-08ee-4019-bb54-954e4de676cf",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "3\u00ba_Grupo J",
+                        "id": "91bfc42f-b140-4f5d-ba23-2c0af6d7423f",
+                        "partidosJugados": 4,
+                        "partidosGanados": 2,
+                        "partidosPerdidos": 2,
+                        "setsGanados": 4,
+                        "setsPerdidos": 4,
+                        "puntos": 8
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo J",
+                        "id": "e8f2b36a-f13c-48a4-bbd0-fff64f2720f7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                },
+                {
+                    "jugador1": {
+                        "nombre": "4\u00ba_Grupo J",
+                        "id": "af6555d6-08ee-4019-bb54-954e4de676cf",
+                        "partidosJugados": 4,
+                        "partidosGanados": 1,
+                        "partidosPerdidos": 3,
+                        "setsGanados": 3,
+                        "setsPerdidos": 6,
+                        "puntos": 6
+                    },
+                    "jugador2": {
+                        "nombre": "5\u00ba_Grupo J",
+                        "id": "e8f2b36a-f13c-48a4-bbd0-fff64f2720f7",
+                        "partidosJugados": 4,
+                        "partidosGanados": 0,
+                        "partidosPerdidos": 4,
+                        "setsGanados": 2,
+                        "setsPerdidos": 8,
+                        "puntos": 4
+                    },
+                    "setsJugador1": [
+                        6,
+                        6,
+                        0
+                    ],
+                    "setsJugador2": [
+                        2,
+                        4,
+                        0
+                    ],
+                    "jugado": true
+                }
+            ]
+        }
+    ]
+}
