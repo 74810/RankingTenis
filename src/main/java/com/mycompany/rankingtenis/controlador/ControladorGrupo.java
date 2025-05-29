@@ -6,13 +6,13 @@ import com.mycompany.rankingtenis.modelo.Partido;
 import com.mycompany.rankingtenis.modelo.Torneo;
 import com.mycompany.rankingtenis.modelo.GestorDatos;
 import com.mycompany.rankingtenis.vista.VentanaGrupo;
+import com.mycompany.rankingtenis.vista.DialogoResultado;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
-import vista.DialogoResultado;
 
 public class ControladorGrupo {
     private Grupo grupo;
@@ -48,9 +48,8 @@ public class ControladorGrupo {
     }
 
     private void abrirDialogoResultado(Partido partido) {
-        DialogoResultado dialogo = new DialogoResultado(vista,
-                partido.getJugador1().getNombre(),
-                partido.getJugador2().getNombre());
+        DialogoResultado dialogo = new DialogoResultado(vista, partido);
+
 
         dialogo.setVisible(true);
 

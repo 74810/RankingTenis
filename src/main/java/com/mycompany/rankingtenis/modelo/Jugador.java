@@ -92,7 +92,7 @@ public class Jugador {
     }
 
     void setId(String id) {
-        this.id=id;
+        this.id = id;
     }
 
     void setPartidosJugados(int partidosJugados) {
@@ -112,10 +112,10 @@ public class Jugador {
     }
 
     void setSetsPerdidos(int setsPerdidos) {
-        this.partidosPerdidos = setsPerdidos;
+        this.setsPerdidos = setsPerdidos;
     }
 
     void setPuntos(int puntos) {
         this.puntos = puntos;
     }
-}
+} 

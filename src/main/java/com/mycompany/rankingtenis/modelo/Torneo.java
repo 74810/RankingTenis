@@ -1,16 +1,21 @@
 package com.mycompany.rankingtenis.modelo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
-public class Torneo {
+public class Torneo implements Serializable {
 
     private String nombreTorneo;
     private List<Grupo> grupos;
+    private List<List<Partido>> historicoJornadas;
 
     public Torneo(String nombreTorneo) {
         this.nombreTorneo = nombreTorneo;
         this.grupos = new ArrayList<>();
+        this.historicoJornadas = new ArrayList<>();
     }
 
     public String getNombreTorneo() {
@@ -19,6 +24,28 @@ public class Torneo {
 
     public List<Grupo> getGrupos() {
         return grupos;
+    }
+
+    public void setGrupos(List<Grupo> grupos) {
+        this.grupos = grupos;
+    }
+
+    public List<List<Partido>> getHistoricoJornadas() {
+        return historicoJornadas;
+    }
+
+    public void setHistoricoJornadas(List<List<Partido>> historicoJornadas) {
+        this.historicoJornadas = historicoJornadas;
+    }
+
+    public Map<String, Grupo> getGruposComoMapa() {
+        Map<String, Grupo> mapa = new LinkedHashMap<>();
+        char letra = 'A';
+        for (Grupo grupo : grupos) {
+            mapa.put(String.valueOf(letra), grupo);
+            letra++;
+        }
+        return mapa;
     }
 
     public void agregarGrupo(Grupo grupo) {
@@ -45,10 +72,9 @@ public class Torneo {
     }
 
     public void ejecutarAscensosYDescensos() {
-        // Paso 1: crear copia de los jugadores a mover y sus nuevos grupos
         List<Grupo> nuevosGrupos = new ArrayList<>();
         for (Grupo g : grupos) {
-            nuevosGrupos.add(new Grupo(g.getNombreGrupo())); // misma cantidad, nombres iguales
+            nuevosGrupos.add(new Grupo(g.getNombreGrupo()));
         }
 
         for (int i = 0; i < grupos.size(); i++) {
@@ -60,7 +86,6 @@ public class Torneo {
                 Jugador jugador = clasificacion.get(pos);
                 int nuevoGrupoIndex = calcularNuevoGrupo(i, pos, tam, grupos.size());
 
-                // Asegurar que no se sale de rango
                 if (nuevoGrupoIndex < 0) {
                     nuevoGrupoIndex = 0;
                 }
@@ -72,7 +97,6 @@ public class Torneo {
             }
         }
 
-        // Reemplazar grupos actuales por los nuevos y regenerar partidos
         grupos.clear();
         for (Grupo g : nuevosGrupos) {
             g.generarPartidos();
@@ -80,54 +104,42 @@ public class Torneo {
         }
     }
 
-    private int calcularNuevoGrupo(int grupoActual, int posicion, int numJugadores, int totalGrupos) {
-    // PRIMER GRUPO (Grupo A)
-    if (grupoActual == 0) {
-        if (posicion <= 1) return grupoActual; // 1º y 2º se mantienen
-        if (posicion < numJugadores - 1) return grupoActual + 1; // intermedios bajan uno
-        if (posicion == numJugadores - 1) return grupoActual + 2; // último baja dos
+    public int calcularNuevoGrupo(int grupoActual, int posicion, int numJugadores, int totalGrupos) {
+        if (grupoActual == 0) {
+            if (posicion <= 1) return grupoActual;
+            if (posicion < numJugadores - 1) return grupoActual + 1;
+            return grupoActual + 2;
+        }
+        if (grupoActual == 1) {
+            if (posicion <= 1) return grupoActual - 1;
+            if (posicion == 2) return grupoActual;
+            if (posicion < numJugadores - 1) return grupoActual + 1;
+            return grupoActual + 2;
+        }
+        if (grupoActual == totalGrupos - 2) {
+            if (posicion == 0) return grupoActual - 2;
+            if (posicion == 1) return grupoActual - 1;
+            if (posicion == 2) return grupoActual;
+            return grupoActual + 1;
+        }
+        if (grupoActual == totalGrupos - 1) {
+            if (posicion == 0) return grupoActual - 2;
+            if (posicion == 1 || posicion == 2) return grupoActual - 1;
+            return grupoActual;
+        }
+        if (numJugadores == 5) {
+            if (posicion == 0) return grupoActual - 2;
+            if (posicion == 1) return grupoActual - 1;
+            if (posicion == 2) return grupoActual;
+            if (posicion == 3) return grupoActual + 1;
+            return grupoActual + 2;
+        } else {
+            if (posicion == 0) return grupoActual - 2;
+            if (posicion == 1) return grupoActual - 1;
+            if (posicion == 2) return grupoActual + 1;
+            return grupoActual + 2;
+        }
     }
-
-    // SEGUNDO GRUPO
-    if (grupoActual == 1) {
-        if (posicion <= 1) return grupoActual - 1; // 1º y 2º suben
-        if (posicion == 2) return grupoActual;     // 3º se mantiene
-        if (posicion < numJugadores - 1) return grupoActual + 1; // intermedios bajan uno
-        if (posicion == numJugadores - 1) return grupoActual + 2; // último baja dos
-    }
-
-    // PENÚLTIMO GRUPO
-    if (grupoActual == totalGrupos - 2) {
-        if (posicion == 0) return grupoActual - 2; // 1º sube dos
-        if (posicion == 1) return grupoActual - 1; // 2º sube uno
-        if (posicion == 2) return grupoActual;     // 3º se mantiene
-        if (posicion >= 3) return grupoActual + 1; // 4º o 5º baja uno
-    }
-
-    // ÚLTIMO GRUPO
-    if (grupoActual == totalGrupos - 1) {
-        if (posicion == 0) return grupoActual - 2; // 1º sube dos
-        if (posicion == 1 || posicion == 2) return grupoActual - 1; // 2º y 3º suben uno
-        return grupoActual; // los demás se mantienen
-    }
-
-    // RESTO DE GRUPOS (Regla general)
-    if (numJugadores == 5) {
-        if (posicion == 0) return grupoActual - 2;
-        if (posicion == 1) return grupoActual - 1;
-        if (posicion == 2) return grupoActual;
-        if (posicion == 3) return grupoActual + 1;
-        if (posicion == 4) return grupoActual + 2;
-    } else if (numJugadores == 4) {
-        if (posicion == 0) return grupoActual - 2;
-        if (posicion == 1) return grupoActual - 1;
-        if (posicion == 2) return grupoActual + 1;
-        if (posicion == 3) return grupoActual + 2;
-    }
-
-    return grupoActual; // por seguridad, no mover si algo falla
-}
-
 
     @Override
     public String toString() {

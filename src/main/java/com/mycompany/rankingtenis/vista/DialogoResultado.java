@@ -1,50 +1,69 @@
-package vista;
+package com.mycompany.rankingtenis.vista;
+
+import com.mycompany.rankingtenis.modelo.Partido;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class DialogoResultado extends JDialog {
-    private JTextField[] setsJ1 = new JTextField[3];
-    private JTextField[] setsJ2 = new JTextField[3];
+
     private boolean confirmado = false;
+    private int[] setsJ1;
+    private int[] setsJ2;
 
-    public DialogoResultado(JFrame parent, String nombreJ1, String nombreJ2) {
-        super(parent, "Resultado: " + nombreJ1 + " vs " + nombreJ2, true);
-        setLayout(new BorderLayout());
-        setSize(300, 200);
-        setLocationRelativeTo(parent);
+    public DialogoResultado(Frame parent, Partido partido) {
+        super(parent, "Registrar Resultado", true);
 
-        JPanel panelSets = new JPanel(new GridLayout(4, 3));
-        panelSets.add(new JLabel(""));
-        panelSets.add(new JLabel("J1: " + nombreJ1));
-        panelSets.add(new JLabel("J2: " + nombreJ2));
+        setsJ1 = new int[3];
+        setsJ2 = new int[3];
+
+        JPanel panel = new JPanel(new GridLayout(4, 3, 10, 10));
+        panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+        panel.add(new JLabel("Set"));
+        panel.add(new JLabel(partido.getJugador1().getNombre()));
+        panel.add(new JLabel(partido.getJugador2().getNombre()));
+
+        JTextField[] camposJ1 = new JTextField[3];
+        JTextField[] camposJ2 = new JTextField[3];
 
         for (int i = 0; i < 3; i++) {
-            panelSets.add(new JLabel("Set " + (i + 1)));
-            setsJ1[i] = new JTextField(2);
-            setsJ2[i] = new JTextField(2);
-            panelSets.add(setsJ1[i]);
-            panelSets.add(setsJ2[i]);
+            panel.add(new JLabel("Set " + (i + 1)));
+            camposJ1[i] = new JTextField(2);
+            camposJ2[i] = new JTextField(2);
+            panel.add(camposJ1[i]);
+            panel.add(camposJ2[i]);
         }
 
-        add(panelSets, BorderLayout.CENTER);
+        JButton btnAceptar = new JButton("Aceptar");
+        JButton btnCancelar = new JButton("Cancelar");
 
-        JPanel panelBotones = new JPanel();
-        JButton aceptar = new JButton("Aceptar");
-        JButton cancelar = new JButton("Cancelar");
-        panelBotones.add(aceptar);
-        panelBotones.add(cancelar);
-        add(panelBotones, BorderLayout.SOUTH);
-
-        aceptar.addActionListener(e -> {
-            confirmado = true;
-            setVisible(false);
+        btnAceptar.addActionListener(e -> {
+            try {
+                for (int i = 0; i < 3; i++) {
+                    setsJ1[i] = Integer.parseInt(camposJ1[i].getText());
+                    setsJ2[i] = Integer.parseInt(camposJ2[i].getText());
+                }
+                confirmado = true;
+                dispose();
+            } catch (NumberFormatException ex) {
+                JOptionPane.showMessageDialog(this, "Introduce resultados válidos para todos los sets.");
+            }
         });
 
-        cancelar.addActionListener(e -> {
+        btnCancelar.addActionListener(e -> {
             confirmado = false;
-            setVisible(false);
+            dispose();
         });
+
+        JPanel botones = new JPanel();
+        botones.add(btnAceptar);
+        botones.add(btnCancelar);
+
+        getContentPane().add(panel, BorderLayout.CENTER);
+        getContentPane().add(botones, BorderLayout.SOUTH);
+        pack();
+        setLocationRelativeTo(parent);
     }
 
     public boolean isConfirmado() {
@@ -52,22 +71,10 @@ public class DialogoResultado extends JDialog {
     }
 
     public int[] getSetsJugador1() {
-        return parsearSets(setsJ1);
+        return setsJ1;
     }
 
     public int[] getSetsJugador2() {
-        return parsearSets(setsJ2);
-    }
-
-    private int[] parsearSets(JTextField[] campos) {
-        int[] sets = new int[3];
-        for (int i = 0; i < 3; i++) {
-            try {
-                sets[i] = Integer.parseInt(campos[i].getText());
-            } catch (NumberFormatException e) {
-                sets[i] = 0;
-            }
-        }
-        return sets;
+        return setsJ2;
     }
 }

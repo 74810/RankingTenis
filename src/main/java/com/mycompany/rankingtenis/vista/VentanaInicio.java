@@ -2,83 +2,76 @@ package com.mycompany.rankingtenis.vista;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
-import java.util.List;
 
 public class VentanaInicio extends JFrame {
 
-    private JTextField campoNombreTorneo;
+    private JTextField campoNombre;
     private JButton botonCrear;
-    private JComboBox<String> comboTorneos;
+    private JComboBox<String> listaTorneos;
     private JButton botonCargar;
 
-    public VentanaInicio(List<String> torneosGuardados) {
-        setTitle("RankingTenis - Inicio");
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(400, 220);
+    public VentanaInicio() {
+        setTitle("Ranking Tenis - Inicio");
+        setSize(400, 300);
         setLocationRelativeTo(null);
-        setLayout(new GridBagLayout());
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(8, 8, 8, 8); // espaciado interno
+        JPanel panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        panel.setBorder(BorderFactory.createEmptyBorder(30, 40, 30, 40));
+        panel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        // Campo para nuevo torneo
-        JLabel etiquetaNuevo = new JLabel("Nombre del nuevo torneo:");
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.anchor = GridBagConstraints.WEST;
-        add(etiquetaNuevo, gbc);
+        // Campo de nombre de nuevo torneo
+        JLabel labelNombre = new JLabel("Nombre del nuevo torneo:");
+        labelNombre.setAlignmentX(Component.CENTER_ALIGNMENT);
+        panel.add(labelNombre);
 
-        campoNombreTorneo = new JTextField(20);
-        gbc.gridx = 1;
-        gbc.gridy = 0;
-        gbc.fill = GridBagConstraints.HORIZONTAL;
-        add(campoNombreTorneo, gbc);
+        campoNombre = new JTextField();
+        campoNombre.setMaximumSize(new Dimension(Integer.MAX_VALUE, 30));
+        panel.add(campoNombre);
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
 
-        botonCrear = new JButton("Crear nuevo torneo");
-        gbc.gridx = 1;
-        gbc.gridy = 1;
-        gbc.fill = GridBagConstraints.NONE;
-        gbc.anchor = GridBagConstraints.CENTER;
-        add(botonCrear, gbc);
+        // Botón crear
+        botonCrear = new JButton("Crear torneo");
+        botonCrear.setAlignmentX(Component.CENTER_ALIGNMENT);
+        panel.add(botonCrear);
+        panel.add(Box.createRigidArea(new Dimension(0, 20)));
 
-        // Combo para torneos guardados
-        JLabel etiquetaCargar = new JLabel("Torneos guardados:");
-        gbc.gridx = 0;
-        gbc.gridy = 2;
-        gbc.anchor = GridBagConstraints.WEST;
-        add(etiquetaCargar, gbc);
+        // Lista de torneos guardados y botón cargar
+        JLabel labelGuardados = new JLabel("Torneos guardados:");
+        labelGuardados.setAlignmentX(Component.CENTER_ALIGNMENT);
+        panel.add(labelGuardados);
 
-        comboTorneos = new JComboBox<>();
-        for (String nombre : torneosGuardados) {
-            comboTorneos.addItem(nombre);
-        }
-        gbc.gridx = 1;
-        gbc.gridy = 2;
-        gbc.fill = GridBagConstraints.HORIZONTAL;
-        add(comboTorneos, gbc);
+        listaTorneos = new JComboBox<>();
+        listaTorneos.setMaximumSize(new Dimension(Integer.MAX_VALUE, 30));
+        panel.add(listaTorneos);
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
 
-        botonCargar = new JButton("Cargar torneo seleccionado");
-        gbc.gridx = 1;
-        gbc.gridy = 3;
-        gbc.anchor = GridBagConstraints.CENTER;
-        add(botonCargar, gbc);
+        botonCargar = new JButton("Cargar torneo");
+        botonCargar.setAlignmentX(Component.CENTER_ALIGNMENT);
+        panel.add(botonCargar);
 
-        setVisible(true);
+        add(panel);
+    }
+
+    public void setControlador(java.awt.event.ActionListener controlador) {
+        botonCrear.setActionCommand("crear");
+        botonCargar.setActionCommand("cargar");
+        botonCrear.addActionListener(controlador);
+        botonCargar.addActionListener(controlador);
     }
 
     public String getNombreNuevoTorneo() {
-        return campoNombreTorneo.getText().trim();
+        return campoNombre.getText();
     }
 
     public String getTorneoSeleccionado() {
-        return (String) comboTorneos.getSelectedItem();
+        Object seleccionado = listaTorneos.getSelectedItem();
+        return seleccionado != null ? seleccionado.toString() : null;
     }
 
-    public void setControlador(ActionListener listener) {
-        botonCrear.setActionCommand("crear");
-        botonCrear.addActionListener(listener);
-        botonCargar.setActionCommand("cargar");
-        botonCargar.addActionListener(listener);
+    public void setListaTorneos(String[] torneos) {
+        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>(torneos);
+        listaTorneos.setModel(model);
     }
 }

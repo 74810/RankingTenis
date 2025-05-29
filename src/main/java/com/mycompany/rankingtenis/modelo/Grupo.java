@@ -62,19 +62,9 @@ public class Grupo {
         return clasificados;
     }
 
-    private Jugador buscarJugadorPorNombre(List<Jugador> lista, String nombre) {
-        for (Jugador j : lista) {
-            if (j.getNombre().equals(nombre)) {
-                return j;
-            }
-        }
-        return null;
-    }
-
     public Grupo copiaProfunda() {
         Grupo copia = new Grupo(this.nombreGrupo);
 
-        // Copiar jugadores
         List<Jugador> copiaJugadores = new ArrayList<>();
         for (Jugador original : this.jugadores) {
             Jugador j = new Jugador(original.getNombre());
@@ -88,25 +78,31 @@ public class Grupo {
         }
         copia.setJugadores(copiaJugadores);
 
-        // Copiar partidos
         List<Partido> copiaPartidos = new ArrayList<>();
         for (Partido original : this.partidos) {
             Jugador j1 = buscarJugadorPorNombre(copiaJugadores, original.getJugador1().getNombre());
             Jugador j2 = buscarJugadorPorNombre(copiaJugadores, original.getJugador2().getNombre());
             Partido nuevo = new Partido(j1, j2);
-
             if (original.estaJugado()) {
                 nuevo.registrarResultado(
                         original.getSetsJugador1(),
                         original.getSetsJugador2()
                 );
             }
-
             copiaPartidos.add(nuevo);
         }
         copia.setPartidos(copiaPartidos);
 
         return copia;
+    }
+
+    private Jugador buscarJugadorPorNombre(List<Jugador> lista, String nombre) {
+        for (Jugador j : lista) {
+            if (j.getNombre().equals(nombre)) {
+                return j;
+            }
+        }
+        return null;
     }
 
     public boolean jornadaCompleta() {
@@ -118,6 +114,14 @@ public class Grupo {
         return true;
     }
 
+    public void setJugadores(List<Jugador> jugadores) {
+        this.jugadores = jugadores;
+    }
+
+    public void setPartidos(List<Partido> partidos) {
+        this.partidos = partidos;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder(nombreGrupo + ":\n");
@@ -127,13 +131,4 @@ public class Grupo {
         }
         return sb.toString();
     }
-
-    public void setJugadores(List<Jugador> jugadores) {
-        this.jugadores = jugadores;
-    }
-
-    public void setPartidos(List<Partido> partidos) {
-        this.partidos = partidos;
-    }
-
 }

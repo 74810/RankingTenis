@@ -3,6 +3,7 @@
 /Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/controlador/ControladorInicio.java
 /Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/controlador/ControladorTorneo.java
 /Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/controlador/RankingTenis.java
+/Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/modelo/CargadorTorneo.java
 /Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/modelo/GestorDatos.java
 /Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/modelo/Grupo.java
 /Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/modelo/Jugador.java
@@ -13,4 +14,5 @@
 /Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/vista/VentanaCrearTorneo.java
 /Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/vista/VentanaGrupo.java
 /Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/vista/VentanaInicio.java
+/Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/vista/VentanaPrevisualizarCambios.java
 /Users/pablo/NetBeansProjects/RankingTenis/src/main/java/com/mycompany/rankingtenis/vista/VentanaTorneo.java
