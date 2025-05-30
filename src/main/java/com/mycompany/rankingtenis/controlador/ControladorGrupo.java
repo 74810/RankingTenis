@@ -15,8 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ControladorGrupo {
+
     private Grupo grupo;
-    private Torneo torneo; // 🔄 Añadido: referencia al torneo
+    private Torneo torneo;
     private VentanaGrupo vista;
 
     public ControladorGrupo(Torneo torneo, Grupo grupo) {
@@ -49,15 +50,15 @@ public class ControladorGrupo {
 
     private void abrirDialogoResultado(Partido partido) {
         DialogoResultado dialogo = new DialogoResultado(vista, partido);
-
-
         dialogo.setVisible(true);
 
         if (dialogo.isConfirmado()) {
             partido.registrarResultado(dialogo.getSetsJugador1(), dialogo.getSetsJugador2());
+            grupo.actualizarEstadisticas();
+            grupo.ordenarJugadores(); // Ordenar después de actualizar estadísticas
             actualizarVista();
 
-            //Guardar el torneo después de registrar/modificar el resultado
+            // Guardar el torneo después de registrar/modificar el resultado
             GestorDatos.guardarTorneo(torneo);
         }
     }

@@ -55,11 +55,20 @@ public class Grupo {
     }
 
     public List<Jugador> obtenerClasificacion() {
-        List<Jugador> clasificados = new ArrayList<>(jugadores);
-        clasificados.sort(Comparator.comparingInt(Jugador::getPuntos).reversed()
+        List<Jugador> copia = new ArrayList<>(this.jugadores);
+
+        copia.sort(Comparator
+                .comparingInt(Jugador::getPuntos).reversed()
                 .thenComparingInt(Jugador::getDiferenciaSets).reversed()
-                .thenComparingInt(Jugador::getSetsGanados).reversed());
-        return clasificados;
+                .thenComparing(Jugador::getNombre));
+
+        // DEBUG para confirmar orden real
+        System.out.println("CLASIFICACIÓN GRUPO " + nombreGrupo);
+        for (Jugador j : copia) {
+            System.out.println(j.getNombre() + " | Puntos: " + j.getPuntos() + " | Dif: " + j.getDiferenciaSets());
+        }
+
+        return copia;
     }
 
     public Grupo copiaProfunda() {
@@ -105,6 +114,13 @@ public class Grupo {
         return null;
     }
 
+    public void ordenarJugadores() {
+        jugadores.sort(Comparator
+                .comparingInt(Jugador::getPuntos).reversed()
+                .thenComparingInt(j -> j.getSetsGanados() - j.getSetsPerdidos()).reversed()
+                .thenComparing(Jugador::getNombre));
+    }
+
     public boolean jornadaCompleta() {
         for (Partido partido : partidos) {
             if (!partido.estaJugado()) {
@@ -131,4 +147,18 @@ public class Grupo {
         }
         return sb.toString();
     }
+
+    public void actualizarEstadisticas() {
+        for (Jugador jugador : jugadores) {
+            jugador.restablecerEstadisticas(); // asegúrate de tener este método en Jugador
+        }
+
+        for (Partido partido : partidos) {
+            if (partido.estaJugado()) {
+                partido.registrarResultado(partido.getSetsJugador1(), partido.getSetsJugador2());
+            }
+        }
+
+    }
+
 }

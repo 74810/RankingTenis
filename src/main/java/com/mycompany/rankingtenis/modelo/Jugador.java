@@ -3,6 +3,7 @@ package com.mycompany.rankingtenis.modelo;
 import java.util.UUID;
 
 public class Jugador {
+
     private String nombre;
     private String id;
 
@@ -62,6 +63,10 @@ public class Jugador {
         return puntos;
     }
 
+    public void sumarPuntoPorJugar() {
+        this.puntos += 1;
+    }
+
     public void registrarPartido(boolean victoria, int setsGanados, int setsPerdidos) {
         this.partidosJugados++;
         if (victoria) {
@@ -75,8 +80,21 @@ public class Jugador {
         this.puntos += 1; // Punto por participación
     }
 
+    public void sumarSets(int ganados, int perdidos) {
+        this.setsGanados += ganados;
+        this.setsPerdidos += perdidos;
+    }
+
+    public void sumarVictoria() {
+        this.partidosGanados++;
+        this.puntos += 3; 
+    }
+
+    public void sumarDerrota() {
+        this.partidosPerdidos++;
+    }
+
     public void restablecerEstadisticas() {
-        this.partidosJugados = 0;
         this.partidosGanados = 0;
         this.partidosPerdidos = 0;
         this.setsGanados = 0;
@@ -86,9 +104,9 @@ public class Jugador {
 
     @Override
     public String toString() {
-        return nombre + " | Puntos: " + puntos + " | PJ: " + partidosJugados +
-               " | PG: " + partidosGanados + " | PP: " + partidosPerdidos +
-               " | SG: " + setsGanados + " | SP: " + setsPerdidos;
+        return nombre + " | Puntos: " + puntos + " | PJ: " + partidosJugados
+                + " | PG: " + partidosGanados + " | PP: " + partidosPerdidos
+                + " | SG: " + setsGanados + " | SP: " + setsPerdidos;
     }
 
     void setId(String id) {
@@ -118,4 +136,4 @@ public class Jugador {
     void setPuntos(int puntos) {
         this.puntos = puntos;
     }
-} 
+}

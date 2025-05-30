@@ -1,0 +1,820 @@
+{
+  "nombreTorneo": "TorneoCompletoCon3Jornadas",
+  "grupos": [
+    {
+      "nombreGrupo": "A",
+      "jugadores": [
+        {
+          "nombre": "Jugador_A_0"
+        },
+        {
+          "nombre": "Jugador_A_1"
+        },
+        {
+          "nombre": "Jugador_A_2"
+        },
+        {
+          "nombre": "Jugador_A_3"
+        }
+      ],
+      "partidos": []
+    },
+    {
+      "nombreGrupo": "B",
+      "jugadores": [
+        {
+          "nombre": "Jugador_B_0"
+        },
+        {
+          "nombre": "Jugador_B_1"
+        },
+        {
+          "nombre": "Jugador_B_2"
+        },
+        {
+          "nombre": "Jugador_B_3"
+        },
+        {
+          "nombre": "Jugador_B_4"
+        }
+      ],
+      "partidos": []
+    }
+  ],
+  "historicoJornadas": [
+    [
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_0"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_3"
+        },
+        "setsJugador1": [
+          6,
+          5,
+          2
+        ],
+        "setsJugador2": [
+          0,
+          3,
+          1
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_0"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_2"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_0"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_1"
+        },
+        "setsJugador1": [
+          5,
+          6,
+          5
+        ],
+        "setsJugador2": [
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_3"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_2"
+        },
+        "setsJugador1": [
+          6,
+          4,
+          3
+        ],
+        "setsJugador2": [
+          2,
+          3,
+          0
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_3"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_1"
+        },
+        "setsJugador1": [
+          6,
+          4,
+          6
+        ],
+        "setsJugador2": [
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_1"
+        },
+        "setsJugador1": [
+          4,
+          5,
+          5
+        ],
+        "setsJugador2": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_3"
+        },
+        "setsJugador1": [
+          5,
+          4,
+          6
+        ],
+        "setsJugador2": [
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_4"
+        },
+        "setsJugador1": [
+          4,
+          5,
+          4
+        ],
+        "setsJugador2": [
+          1,
+          3,
+          2
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_1"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_0"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_3"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_4"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_3"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_1"
+        },
+        "setsJugador1": [
+          5,
+          4,
+          5
+        ],
+        "setsJugador2": [
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_3"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_0"
+        },
+        "setsJugador1": [
+          5,
+          5,
+          0
+        ],
+        "setsJugador2": [
+          3,
+          0,
+          1
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_4"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_1"
+        },
+        "setsJugador1": [
+          5,
+          6,
+          6
+        ],
+        "setsJugador2": [
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_4"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_0"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_1"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_0"
+        },
+        "setsJugador1": [
+          5,
+          4,
+          0
+        ],
+        "setsJugador2": [
+          2,
+          2,
+          0
+        ]
+      }
+    ],
+    [
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_1"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_0"
+        },
+        "setsJugador1": [
+          4,
+          4,
+          2
+        ],
+        "setsJugador2": [
+          3,
+          3,
+          2
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_3"
+        },
+        "setsJugador1": [
+          5,
+          5,
+          3
+        ],
+        "setsJugador2": [
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_1"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_0"
+        },
+        "setsJugador1": [
+          6,
+          4,
+          0
+        ],
+        "setsJugador2": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_1"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_3"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_0"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_3"
+        },
+        "setsJugador1": [
+          4,
+          6,
+          1
+        ],
+        "setsJugador2": [
+          3,
+          2,
+          3
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_0"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_2"
+        },
+        "setsJugador1": [
+          4,
+          4,
+          6
+        ],
+        "setsJugador2": [
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_0"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_3"
+        },
+        "setsJugador1": [
+          5,
+          6,
+          6
+        ],
+        "setsJugador2": [
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_0"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_1"
+        },
+        "setsJugador1": [
+          4,
+          4,
+          4
+        ],
+        "setsJugador2": [
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_0"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_4"
+        },
+        "setsJugador1": [
+          5,
+          4,
+          0
+        ],
+        "setsJugador2": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_3"
+        },
+        "setsJugador1": [
+          6,
+          6,
+          3
+        ],
+        "setsJugador2": [
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_1"
+        },
+        "setsJugador1": [
+          6,
+          4,
+          5
+        ],
+        "setsJugador2": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_4"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_3"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_1"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_3"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_4"
+        },
+        "setsJugador1": [
+          5,
+          6,
+          3
+        ],
+        "setsJugador2": [
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_1"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_4"
+        },
+        "setsJugador1": [
+          4,
+          5,
+          0
+        ],
+        "setsJugador2": [
+          0,
+          2,
+          0
+        ]
+      }
+    ],
+    [
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_1"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_0"
+        },
+        "setsJugador1": [
+          4,
+          5,
+          2
+        ],
+        "setsJugador2": [
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_1"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_2"
+        },
+        "setsJugador1": [
+          4,
+          4,
+          0
+        ],
+        "setsJugador2": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_1"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_3"
+        },
+        "setsJugador1": [
+          4,
+          6,
+          3
+        ],
+        "setsJugador2": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_0"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_2"
+        },
+        "setsJugador1": [
+          6,
+          4,
+          0
+        ],
+        "setsJugador2": [
+          3,
+          1,
+          2
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_0"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_3"
+        },
+        "setsJugador1": [
+          5,
+          5,
+          1
+        ],
+        "setsJugador2": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_A_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_A_3"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_1"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_3"
+        },
+        "setsJugador1": [
+          5,
+          6,
+          2
+        ],
+        "setsJugador2": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_1"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_2"
+        },
+        "setsJugador1": [
+          5,
+          4,
+          6
+        ],
+        "setsJugador2": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_1"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_0"
+        },
+        "setsJugador1": [
+          5,
+          5,
+          5
+        ],
+        "setsJugador2": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_1"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_4"
+        },
+        "setsJugador1": [
+          6,
+          5,
+          0
+        ],
+        "setsJugador2": [
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_3"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_2"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_3"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_0"
+        },
+        "setsJugador1": [
+          6,
+          5,
+          3
+        ],
+        "setsJugador2": [
+          3,
+          2,
+          0
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_3"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_4"
+        },
+        "setsJugador1": [
+          6,
+          5,
+          1
+        ],
+        "setsJugador2": [
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_0"
+        },
+        "setsJugador1": [
+          4,
+          6,
+          2
+        ],
+        "setsJugador2": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_2"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_4"
+        },
+        "setsJugador1": [],
+        "setsJugador2": []
+      },
+      {
+        "jugador1": {
+          "nombre": "Jugador_B_0"
+        },
+        "jugador2": {
+          "nombre": "Jugador_B_4"
+        },
+        "setsJugador1": [
+          6,
+          4,
+          6
+        ],
+        "setsJugador2": [
+          2,
+          2,
+          0
+        ]
+      }
+    ]
+  ]
+}

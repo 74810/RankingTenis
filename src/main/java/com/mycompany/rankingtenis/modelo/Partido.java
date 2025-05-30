@@ -33,16 +33,17 @@ public class Partido {
         return jugador2;
     }
 
-    public boolean estaJugado() {
-        return jugado;
-    }
-
     public int[] getSetsJugador1() {
         return setsJugador1;
     }
 
     public int[] getSetsJugador2() {
         return setsJugador2;
+    }
+
+    public boolean estaJugado() {
+        return setsJugador1 != null && setsJugador2 != null
+                && setsJugador1.length > 0 && setsJugador2.length > 0;
     }
 
     public void registrarResultado(int[] sets1, int[] sets2) {
@@ -94,11 +95,42 @@ public class Partido {
         }
     }
 
+//    public void actualizarEstadisticas() {
+//        int setsGanadosJ1 = 0;
+//        int setsGanadosJ2 = 0;
+//
+//        for (int i = 0; i < setsJugador1.length; i++) {
+//            if (setsJugador1[i] > setsJugador2[i]) {
+//                setsGanadosJ1++;
+//            } else {
+//                setsGanadosJ2++;
+//            }
+//        }
+//
+//        jugador1.sumarSets(setsGanadosJ1, setsJugador2.length - setsGanadosJ1);
+//        jugador2.sumarSets(setsGanadosJ2, setsJugador1.length - setsGanadosJ2);
+//
+//        if (setsGanadosJ1 > setsGanadosJ2) {
+//            jugador1.sumarVictoria();
+//            jugador2.sumarDerrota();
+//        } else {
+//            jugador2.sumarVictoria();
+//            jugador1.sumarDerrota();
+//        }
+//
+//        jugador1.sumarPuntoPorJugar();
+//        jugador2.sumarPuntoPorJugar();
+//    }
+//
+//    public boolean estaJugado() {
+//        return setsJugador1 != null && setsJugador2 != null
+//                && setsJugador1.length > 0 && setsJugador2.length > 0;
+//    }
     void setJugador1(Jugador j1) {
-        this.setsJugador1 = setsJugador1;
+        this.jugador1 = j1;
     }
 
     void setJugador2(Jugador j2) {
-        this.setsJugador2 = setsJugador2;
+        this.jugador2 = j2;
     }
-} 
+}
