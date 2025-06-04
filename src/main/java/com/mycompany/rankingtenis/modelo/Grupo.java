@@ -17,6 +17,22 @@ public class Grupo {
         this.partidos = new ArrayList<>();
     }
 
+    public Grupo(Grupo otro) {
+        this.nombreGrupo = otro.nombreGrupo;
+        this.jugadores = new ArrayList<>();
+        for (Jugador jugador : otro.jugadores) {
+            this.jugadores.add(new Jugador(jugador)); // constructor copia
+        }
+        this.partidos = new ArrayList<>();
+        for (Partido partido : otro.partidos) {
+            this.partidos.add(new Partido(partido)); // constructor copia
+        }
+    }
+
+    public String getNombre() {
+        return nombreGrupo;
+    }
+
     public String getNombreGrupo() {
         return nombreGrupo;
     }
@@ -37,17 +53,18 @@ public class Grupo {
     }
 
     public void generarPartidos() {
-        partidos.clear();
+        this.partidos.clear();
         for (int i = 0; i < jugadores.size(); i++) {
             for (int j = i + 1; j < jugadores.size(); j++) {
-                partidos.add(new Partido(jugadores.get(i), jugadores.get(j)));
+                Partido nuevo = new Partido(jugadores.get(i), jugadores.get(j));
+                partidos.add(nuevo);
             }
         }
     }
 
     public void reiniciarPartidos() {
         for (Partido partido : partidos) {
-            partido.reiniciarPartido();
+            partido.reiniciar();
         }
         for (Jugador jugador : jugadores) {
             jugador.restablecerEstadisticas();
@@ -55,19 +72,12 @@ public class Grupo {
     }
 
     public List<Jugador> obtenerClasificacion() {
-        List<Jugador> copia = new ArrayList<>(this.jugadores);
-
+        List<Jugador> copia = new ArrayList<>(jugadores);
         copia.sort(Comparator
                 .comparingInt(Jugador::getPuntos).reversed()
-                .thenComparingInt(Jugador::getDiferenciaSets).reversed()
-                .thenComparing(Jugador::getNombre));
-
-        // DEBUG para confirmar orden real
-        System.out.println("CLASIFICACIÓN GRUPO " + nombreGrupo);
-        for (Jugador j : copia) {
-            System.out.println(j.getNombre() + " | Puntos: " + j.getPuntos() + " | Dif: " + j.getDiferenciaSets());
-        }
-
+                .thenComparingInt(Jugador::getSetsGanados).reversed()
+                .thenComparingInt(Jugador::getSetsPerdidos)
+        );
         return copia;
     }
 
@@ -95,8 +105,11 @@ public class Grupo {
             if (original.estaJugado()) {
                 nuevo.registrarResultado(
                         original.getSetsJugador1(),
-                        original.getSetsJugador2()
+                        original.getSetsJugador2(),
+                        nuevo.getJugador1(),
+                        nuevo.getJugador2()
                 );
+
             }
             copiaPartidos.add(nuevo);
         }
@@ -130,6 +143,7 @@ public class Grupo {
         return true;
     }
 
+
     public void setJugadores(List<Jugador> jugadores) {
         this.jugadores = jugadores;
     }
@@ -150,15 +164,18 @@ public class Grupo {
 
     public void actualizarEstadisticas() {
         for (Jugador jugador : jugadores) {
-            jugador.restablecerEstadisticas(); // asegúrate de tener este método en Jugador
+            jugador.restablecerEstadisticas();
         }
-
         for (Partido partido : partidos) {
             if (partido.estaJugado()) {
-                partido.registrarResultado(partido.getSetsJugador1(), partido.getSetsJugador2());
+                partido.registrarResultado(
+                        partido.getSetsJugador1(),
+                        partido.getSetsJugador2(),
+                        partido.getJugador1(),
+                        partido.getJugador2()
+                );
             }
         }
-
     }
 
 }

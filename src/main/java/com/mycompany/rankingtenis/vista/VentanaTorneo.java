@@ -1,5 +1,6 @@
 package com.mycompany.rankingtenis.vista;
 
+import com.mycompany.rankingtenis.modelo.Grupo;
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
@@ -44,15 +45,6 @@ public class VentanaTorneo extends JFrame {
         add(panelBotones, BorderLayout.SOUTH);
     }
 
-    public void mostrarGrupos(List<JPanel> paneles) {
-        panelPrincipal.removeAll();
-        for (JPanel panel : paneles) {
-            panelPrincipal.add(panel);
-        }
-        panelPrincipal.revalidate();
-        panelPrincipal.repaint();
-    }
-
     public void actualizarEtiquetaJornada(int actual, int total) {
         etiquetaJornada.setText("Jornada: " + (actual + 1) + " / " + total);
     }
@@ -71,6 +63,29 @@ public class VentanaTorneo extends JFrame {
 
     public JButton getBotonVolver() {
         return botonVolver;
+    }
+
+    public void mostrarGruposVisuales(List<JPanel> paneles) {
+        panelPrincipal.removeAll();
+
+        for (JPanel panel : paneles) {
+            panelPrincipal.add(panel);
+        }
+
+        panelPrincipal.revalidate();
+        panelPrincipal.repaint();
+    }
+
+    public void mostrarGrupos(List<Grupo> grupos) {
+        panelPrincipal.removeAll();
+
+        for (Grupo grupo : grupos) {
+            PanelGrupoEditable panelGrupo = new PanelGrupoEditable(grupo);
+            panelPrincipal.add(panelGrupo);
+        }
+
+        panelPrincipal.revalidate();
+        panelPrincipal.repaint();
     }
 
     public void setControlador(java.awt.event.ActionListener controlador) {

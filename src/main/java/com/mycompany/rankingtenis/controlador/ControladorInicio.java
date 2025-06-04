@@ -1,14 +1,12 @@
 package com.mycompany.rankingtenis.controlador;
 
 import com.mycompany.rankingtenis.modelo.CargadorTorneo;
-import com.mycompany.rankingtenis.modelo.GestorDatos;
 import com.mycompany.rankingtenis.modelo.Torneo;
 import com.mycompany.rankingtenis.vista.VentanaInicio;
-import com.mycompany.rankingtenis.vista.VentanaTorneo;
-import javax.swing.*;
-import java.awt.*;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 public class ControladorInicio implements ActionListener {
 
@@ -17,53 +15,35 @@ public class ControladorInicio implements ActionListener {
     public ControladorInicio() {
         vista = new VentanaInicio();
         vista.setControlador(this);
-        vista.setListaTorneos(GestorDatos.listarTorneosGuardados().toArray(new String[0]));
+        vista.setListaTorneos(new File("recursos/torneos_guardados").list());
         vista.setVisible(true);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        String comando = e.getActionCommand();
+        Object source = e.getSource();
 
-        if (comando.equals("crear")) {
-            String nombre = vista.getNombreNuevoTorneo();
-            if (nombre.isEmpty()) {
-                JOptionPane.showMessageDialog(vista, "Escribe un nombre para el torneo.");
-                return;
-            }
-
-            Torneo torneo = new Torneo(nombre);
-            new ControladorCrearTorneo(torneo);
-            vista.dispose();
-
-        } else if (comando.equals("cargar")) {
-            String seleccionado = vista.getTorneoSeleccionado();
-            if (seleccionado == null) {
-                JOptionPane.showMessageDialog(vista, "Selecciona un torneo.");
-                return;
-            }
-
-            Torneo torneo = GestorDatos.cargarTorneo(seleccionado);
-            if (torneo != null) {
-                new ControladorTorneo(torneo);
-                vista.dispose();
-            } else {
-                JOptionPane.showMessageDialog(vista, "Error al cargar torneo.");
-            }
+        if (source == vista.getBotonCargar()) {
+            iniciarTorneo();
+        } else if (source == vista.getBotonCrear()) {
+            System.out.println("Crear torneo no implementado aún");
         }
     }
 
     public void iniciarTorneo() {
-        try {
-            String ruta = "recursos/torneos_guardados/tu_torneo_con_historial.json";
-            Torneo torneo = CargadorTorneo.cargarTorneoDesdeArchivo(ruta);
-            if (torneo != null) {
-                new ControladorTorneo(torneo);
-            } else {
-                System.out.println("Error al cargar el torneo.");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
+        String seleccionado = vista.getTorneoSeleccionado();
+        if (seleccionado == null || seleccionado.isBlank()) {
+            System.out.println("No se ha seleccionado ningún torneo.");
+            return;
+        }
+
+        String ruta = "recursos/torneos_guardados/" + seleccionado;
+        Torneo torneo = CargadorTorneo.cargarTorneoDesdeArchivo(ruta);
+        if (torneo != null) {
+            new ControladorTorneo(torneo);
+            vista.dispose();
+        } else {
+            System.out.println("El torneo no se pudo cargar.");
         }
     }
 }

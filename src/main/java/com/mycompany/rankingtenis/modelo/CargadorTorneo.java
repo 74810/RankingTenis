@@ -3,6 +3,7 @@ package com.mycompany.rankingtenis.modelo;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mycompany.rankingtenis.modelo.Torneo;
+import java.io.File;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -17,45 +18,53 @@ public class CargadorTorneo {
             Gson gson = new GsonBuilder().create();
             Torneo torneo = gson.fromJson(reader, Torneo.class);
 
-            reconstruirEstadisticas(torneo); // ← ESTE PASO ES CLAVE
+            System.out.println("Torneo cargado desde: " + ruta);
+
+            torneo.reconstruirHistorico(); // <--- CRUCIAL
+            System.out.println("Estadísticas reconstruidas correctamente.");
 
             return torneo;
-        } catch (IOException e) {
+        } catch (Exception e) {
+            System.err.println("Error al cargar torneo: " + e.getMessage());
             e.printStackTrace();
             return null;
         }
     }
 
-    private static void reconstruirEstadisticas(Torneo torneo) {
-        for (Grupo grupo : torneo.getGrupos()) {
-            List<Jugador> jugadores = grupo.getJugadores();
-            // Reiniciar estadísticas
-            for (Jugador jugador : jugadores) {
-                jugador.restablecerEstadisticas();
-            }
+    public static void reconstruirHistorial(Torneo torneo) {
+        for (List<Partido> jornada : torneo.getHistoricoJornadas()) {
+            for (int i = 0; i < jornada.size(); i++) {
+                Partido partidoOriginal = jornada.get(i);
 
-            List<Partido> partidosReconstruidos = new ArrayList<>();
-            for (Partido partidoOriginal : grupo.getPartidos()) {
-                if (!partidoOriginal.estaJugado()) {
-                    partidosReconstruidos.add(partidoOriginal); // conservar partido pendiente
+                Jugador j1 = buscarJugadorEnTorneo(torneo, partidoOriginal.getJugador1().getNombre());
+                Jugador j2 = buscarJugadorEnTorneo(torneo, partidoOriginal.getJugador2().getNombre());
+
+                if (j1 == null || j2 == null) {
                     continue;
                 }
 
-                Jugador j1 = buscarJugadorPorNombre(jugadores, partidoOriginal.getJugador1().getNombre());
-                Jugador j2 = buscarJugadorPorNombre(jugadores, partidoOriginal.getJugador2().getNombre());
+                Partido reconstruido = new Partido(j1, j2);
+                reconstruido.registrarResultado(
+                        partidoOriginal.getSetsJugador1(),
+                        partidoOriginal.getSetsJugador2(),
+                        j1,
+                        j2
+                );
 
-                if (j1 != null && j2 != null) {
-                    Partido nuevo = new Partido(j1, j2);
-                    nuevo.registrarResultado(
-                            partidoOriginal.getSetsJugador1(),
-                            partidoOriginal.getSetsJugador2()
-                    );
-                    partidosReconstruidos.add(nuevo);
+                jornada.set(i, reconstruido);
+            }
+        }
+    }
+
+    private static Jugador buscarJugadorEnTorneo(Torneo torneo, String nombre) {
+        for (Grupo grupo : torneo.getGrupos()) {
+            for (Jugador jugador : grupo.getJugadores()) {
+                if (jugador.getNombre().equals(nombre)) {
+                    return jugador;
                 }
             }
-
-            grupo.setPartidos(partidosReconstruidos);
         }
+        return null;
     }
 
     private static Jugador buscarJugadorPorNombre(List<Jugador> lista, String nombre) {

@@ -31,6 +31,7 @@ public class ControladorTorneo implements ActionListener {
     public ControladorTorneo(Torneo torneo) {
         this.torneo = torneo;
         this.vista = new VentanaTorneo(torneo.getNombreTorneo());
+        this.vista.mostrarGrupos(torneo.getGrupos());
         this.vista.setControlador(this);
         this.vista.getBotonAnterior().addActionListener(e -> mostrarJornada(indiceJornada - 1));
         this.vista.getBotonSiguiente().addActionListener(e -> mostrarJornada(indiceJornada + 1));
@@ -49,14 +50,25 @@ public class ControladorTorneo implements ActionListener {
     }
 
     private void guardarJornada() {
-        List<Partido> partidos = new ArrayList<>();
+        // Guardar copia profunda de los grupos
+        List<Grupo> copiaGrupos = new ArrayList<>();
+        for (Grupo grupo : torneo.getGrupos()) {
+            copiaGrupos.add(new Grupo(grupo));
+        }
+        List<List<Grupo>> historial = torneo.getHistoricoGrupos();
+        historial.add(copiaGrupos);
+        torneo.setHistoricoGrupos(historial);
+
+        // Guardar copia de los partidos
+        List<Partido> copiaJornada = new ArrayList<>();
         for (Grupo grupo : torneo.getGrupos()) {
             for (Partido partido : grupo.getPartidos()) {
-                partidos.add(partido);
+                copiaJornada.add(new Partido(partido)); // Copia profunda
             }
         }
-        historicoJornadas.add(partidos);
+        historicoJornadas.add(copiaJornada);
         torneo.setHistoricoJornadas(historicoJornadas);
+
         indiceJornada = historicoJornadas.size() - 1;
     }
 
@@ -75,16 +87,26 @@ public class ControladorTorneo implements ActionListener {
         return null;
     }
 
+    private Jugador buscarJugadorPorNombre(List<Jugador> jugadores, String nombre) {
+        for (Jugador j : jugadores) {
+            if (j.getNombre().equals(nombre)) {
+                return j;
+            }
+        }
+        return null;
+    }
+
     public void mostrarJornada(int indice) {
-        if (indice < 0 || indice >= historicoJornadas.size()) {
+        if (indice < 0 || indice >= torneo.getHistoricoJornadas().size()) {
             return;
         }
 
         this.indiceJornada = indice;
 
-        List<Partido> partidos = historicoJornadas.get(indice);
-        Map<String, List<Partido>> partidosPorGrupo = new HashMap<>();
+        List<Grupo> gruposDeLaJornada = torneo.getHistoricoGrupos().get(indice);
+        List<Partido> partidos = torneo.getHistoricoJornadas().get(indice);
 
+        Map<String, List<Partido>> partidosPorGrupo = new HashMap<>();
         for (Partido partido : partidos) {
             String grupo = obtenerGrupoDeJugador(partido.getJugador1());
             if (grupo == null) {
@@ -94,50 +116,54 @@ public class ControladorTorneo implements ActionListener {
         }
 
         List<JPanel> paneles = new ArrayList<>();
-        for (Map.Entry<String, List<Partido>> entry : partidosPorGrupo.entrySet()) {
-            JPanel panel = new JPanel(new BorderLayout());
-            panel.setBorder(BorderFactory.createTitledBorder("Grupo " + entry.getKey()));
 
-            Grupo grupo = torneo.getGruposComoMapa().get(entry.getKey());
-            if (grupo == null) {
-                continue;
-            }
+        for (Grupo grupo : gruposDeLaJornada) {
+            JPanel panel = new JPanel(new BorderLayout());
+            panel.setBorder(BorderFactory.createTitledBorder("Grupo " + grupo.getNombre()));
+
             List<Jugador> jugadores = grupo.obtenerClasificacion();
             JTable tabla = construirTablaClasificacion(jugadores);
 
             int totalWidth = 600;
-            int numCols = tabla.getColumnCount();
-            int anchoNombre = totalWidth * 2 / (numCols + 1);
-            int anchoOtros = (totalWidth - anchoNombre) / (numCols - 1);
+            int anchoNombre = 150;
+            int anchoResto = (totalWidth - anchoNombre) / 7;
 
-            tabla.setPreferredScrollableViewportSize(new Dimension(totalWidth, tabla.getRowHeight() * jugadores.size()));
             tabla.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-
             tabla.getColumnModel().getColumn(0).setPreferredWidth(anchoNombre);
-            for (int i = 1; i < numCols; i++) {
-                tabla.getColumnModel().getColumn(i).setPreferredWidth(anchoOtros);
+            for (int i = 1; i < tabla.getColumnCount(); i++) {
+                tabla.getColumnModel().getColumn(i).setPreferredWidth(anchoResto);
             }
 
-            tabla.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
+            tabla.setPreferredScrollableViewportSize(
+                    new Dimension(totalWidth, tabla.getRowHeight() * jugadores.size())
+            );
             JScrollPane scroll = new JScrollPane(tabla);
+            scroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
             JButton boton = new JButton("Gestionar");
-            boton.addActionListener(e -> {
-                Grupo g = torneo.getGruposComoMapa().get(entry.getKey());
-                new ControladorGrupo(torneo, g);
-            });
+            boton.addActionListener(e -> new ControladorGrupo(torneo, grupo));
 
             panel.add(scroll, BorderLayout.CENTER);
             panel.add(boton, BorderLayout.SOUTH);
-            panel.setPreferredSize(new Dimension(300, (150 + 6 * jugadores.size())));
-
+            panel.setPreferredSize(new Dimension(300, 150 + 6 * jugadores.size()));
             paneles.add(panel);
         }
 
-        vista.mostrarGrupos(paneles);
+        vista.mostrarGruposVisuales(paneles);
         vista.getBotonAnterior().setEnabled(indice > 0);
-        vista.getBotonSiguiente().setEnabled(indice < historicoJornadas.size() - 1);
-        vista.actualizarEtiquetaJornada(indiceJornada, historicoJornadas.size());
+        vista.getBotonSiguiente().setEnabled(indice < torneo.getHistoricoJornadas().size() - 1);
+        vista.actualizarEtiquetaJornada(indiceJornada, torneo.getHistoricoJornadas().size());
+    }
+
+    private String encontrarGrupoDeJugador(Jugador jugador, List<Grupo> grupos) {
+        for (Grupo grupo : grupos) {
+            for (Jugador j : grupo.getJugadores()) {
+                if (j.getNombre().equals(jugador.getNombre())) {
+                    return grupo.getNombre();
+                }
+            }
+        }
+        return null;
     }
 
     private JTable construirTablaClasificacion(List<Jugador> jugadoresOriginal) {
@@ -176,7 +202,6 @@ public class ControladorTorneo implements ActionListener {
 
     private void volverAlInicio() {
         vista.dispose();
-        new ControladorInicio();
     }
 
     @Override
@@ -196,19 +221,19 @@ public class ControladorTorneo implements ActionListener {
     }
 
     public void ejecutarAscensosConVistaPrevia() {
-        // Desactivar temporalmente el botón de ascensos para evitar eventos duplicados
+        // Desactivar botón
         vista.getBotonAscensos().setEnabled(false);
 
         Map<String, Grupo> mapaGrupos = torneo.getGruposComoMapa();
         List<String> nombres = new ArrayList<>(mapaGrupos.keySet());
         Collections.sort(nombres);
 
+        // Calcular sugerencias
         Map<Jugador, String> sugeridos = new HashMap<>();
         for (int i = 0; i < nombres.size(); i++) {
             Grupo grupo = mapaGrupos.get(nombres.get(i));
             List<Jugador> clasificados = grupo.obtenerClasificacion();
             int tam = clasificados.size();
-
             for (int pos = 0; pos < tam; pos++) {
                 Jugador jugador = clasificados.get(pos);
                 int destino = torneo.calcularNuevoGrupo(i, pos, tam, nombres.size());
@@ -223,6 +248,7 @@ public class ControladorTorneo implements ActionListener {
             return;
         }
 
+        // Mostrar ventana de cambios
         List<Grupo> gruposOriginales = torneo.getGrupos();
         VentanaPrevisualizarCambios vistaCambios = new VentanaPrevisualizarCambios(gruposOriginales, sugeridos);
         vistaCambios.setVisible(true);
@@ -233,6 +259,17 @@ public class ControladorTorneo implements ActionListener {
             return;
         }
 
+        // 1. Guardar la jornada actual (estado antes de aplicar cambios)
+        guardarJornada();
+
+        // 2. Resetear estadísticas ANTES de crear nuevos partidos
+        for (Grupo grupo : torneo.getGrupos()) {
+            for (Jugador j : grupo.getJugadores()) {
+                j.restablecerEstadisticas();
+            }
+        }
+
+        // 3. Reorganizar jugadores en nuevos grupos
         Map<String, List<Jugador>> nuevosGrupos = new HashMap<>();
         for (String nombre : nombres) {
             nuevosGrupos.put(nombre, new ArrayList<>());
@@ -248,20 +285,20 @@ public class ControladorTorneo implements ActionListener {
             }
         }
 
+        // 4. Asignar jugadores y generar nuevos partidos
         for (String nombre : nombres) {
             Grupo grupo = mapaGrupos.get(nombre);
             grupo.setJugadores(nuevosGrupos.get(nombre));
             grupo.generarPartidos();
         }
 
-        guardarJornada();
+        // 6. Mostrar y guardar
         mostrarJornada(indiceJornada);
         GestorDatos.guardarTorneo(torneo);
-
         JOptionPane.showMessageDialog(vista, "Cambios aplicados y torneo guardado.");
 
-        // Volver a activar el botón de ascensos y limpiar posibles eventos colgados
         vista.getBotonAscensos().setEnabled(true);
         vista.getRootPane().requestFocus();
     }
+
 }

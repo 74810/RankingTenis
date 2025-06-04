@@ -53,7 +53,12 @@ public class ControladorGrupo {
         dialogo.setVisible(true);
 
         if (dialogo.isConfirmado()) {
-            partido.registrarResultado(dialogo.getSetsJugador1(), dialogo.getSetsJugador2());
+            partido.registrarResultado(
+                    dialogo.getSetsJugador1(),
+                    dialogo.getSetsJugador2(),
+                    partido.getJugador1(),
+                    partido.getJugador2()
+            );
             grupo.actualizarEstadisticas();
             grupo.ordenarJugadores(); // Ordenar después de actualizar estadísticas
             actualizarVista();

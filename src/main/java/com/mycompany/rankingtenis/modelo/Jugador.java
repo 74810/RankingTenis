@@ -27,6 +27,18 @@ public class Jugador {
         this.puntos = 0;
     }
 
+    public Jugador(Jugador otro) {
+        this.nombre = otro.nombre;
+        this.id = otro.id;
+
+        this.partidosJugados = 0;
+        this.partidosGanados = 0;
+        this.partidosPerdidos = 0;
+        this.setsGanados = 0;
+        this.setsPerdidos = 0;
+        this.puntos = 0;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -87,7 +99,7 @@ public class Jugador {
 
     public void sumarVictoria() {
         this.partidosGanados++;
-        this.puntos += 3; 
+        this.puntos += 3;
     }
 
     public void sumarDerrota() {
@@ -95,11 +107,24 @@ public class Jugador {
     }
 
     public void restablecerEstadisticas() {
+        this.partidosJugados = 0;
         this.partidosGanados = 0;
         this.partidosPerdidos = 0;
         this.setsGanados = 0;
         this.setsPerdidos = 0;
         this.puntos = 0;
+    }
+
+    public Jugador clonar() {
+        Jugador copia = new Jugador(this.nombre);
+        copia.setId(this.id);
+        copia.setPartidosJugados(this.partidosJugados);
+        copia.setPartidosGanados(this.partidosGanados);
+        copia.setPartidosPerdidos(this.partidosPerdidos);
+        copia.setSetsGanados(this.setsGanados);
+        copia.setSetsPerdidos(this.setsPerdidos);
+        copia.setPuntos(this.puntos);
+        return copia;
     }
 
     @Override

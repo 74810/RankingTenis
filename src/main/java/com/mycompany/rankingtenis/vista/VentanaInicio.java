@@ -74,4 +74,13 @@ public class VentanaInicio extends JFrame {
         DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>(torneos);
         listaTorneos.setModel(model);
     }
+
+    public JButton getBotonCargar() {
+        return botonCargar;
+    }
+    
+    public JButton getBotonCrear() {
+        return botonCrear;
+    }
+
 }
