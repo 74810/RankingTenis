@@ -15,7 +15,11 @@ public class ControladorInicio implements ActionListener {
     public ControladorInicio() {
         vista = new VentanaInicio();
         vista.setControlador(this);
-        vista.setListaTorneos(new File("recursos/torneos_guardados").list());
+
+        File carpeta = new File("recursos/torneos_guardados");
+        String[] jsons = carpeta.list((dir, name) -> name.toLowerCase().endsWith(".json"));
+        vista.setListaTorneos(jsons);
+
         vista.setVisible(true);
     }
 

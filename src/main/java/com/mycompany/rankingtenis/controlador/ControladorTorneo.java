@@ -153,6 +153,8 @@ public class ControladorTorneo implements ActionListener {
         vista.getBotonAnterior().setEnabled(indice > 0);
         vista.getBotonSiguiente().setEnabled(indice < torneo.getHistoricoJornadas().size() - 1);
         vista.actualizarEtiquetaJornada(indiceJornada, torneo.getHistoricoJornadas().size());
+        vista.getBotonAscensos().setEnabled(indice == torneo.getHistoricoJornadas().size() - 1);
+
     }
 
     private String encontrarGrupoDeJugador(Jugador jugador, List<Grupo> grupos) {
